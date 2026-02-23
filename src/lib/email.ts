@@ -1,6 +1,13 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResendClient() {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.warn('RESEND_API_KEY environment variable is not set');
+    return null;
+  }
+  return new Resend(apiKey);
+}
 
 interface BookingEmailData {
   propertyName: string;
@@ -26,6 +33,13 @@ export async function sendBookingNotificationEmail(data: BookingEmailData) {
   } = data;
 
   try {
+    const resend = getResendClient();
+    
+    if (!resend) {
+      console.error('Resend client not initialized - API key missing');
+      return { success: false, error: 'Email service not configured' };
+    }
+
     await resend.emails.send({
       from: 'Florida Rentals <bookings@floridarentals.com>',
       to: process.env.BOOKING_NOTIFICATION_EMAIL || 'Leslie.Masucci@gmail.com',
