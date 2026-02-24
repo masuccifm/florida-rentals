@@ -239,6 +239,41 @@ export const properties: Property[] = [
     ],
     featured: false,
   },
+  {
+    id: 'wellen-park-unit-208-long-term',
+    slug: 'wellen-park-long-term-208',
+    name: 'Wellen Park Unit 208 (Long-Term)',
+    description: 'Long-term 2BR condo at Wellen Park. Comfortable and convenient monthly rental.',
+    longDescription: `12520 Galapagos Ct Unit 208, Venice, FL 34293. Spacious long-term unit with full kitchen, comfortable living area, and community amenities.`,
+    address: '12520 Galapagos Ct Unit 208, Venice, FL 34293',
+    location: {
+      city: 'Venice',
+      state: 'Florida',
+      area: 'Wellen Park Golf & Country Club',
+    },
+    images: [
+      'https://images.unsplash.com/photo-1505692794400-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80'
+    ],
+    monthlyPrice: 2100,
+    features: {
+      bedrooms: 2,
+      bathrooms: 2,
+      maxGuests: 4,
+      squareFeet: 1100,
+    },
+    amenities: [
+      'Full Kitchen',
+      'High-Speed WiFi',
+      'Community Pool',
+      'Fitness Center'
+    ],
+    rules: [
+      'Long-term lease preferred (30+ nights)',
+      'No smoking'
+    ],
+    featured: false,
+  },
 ];
 
 // Helper functions
