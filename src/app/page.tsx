@@ -6,8 +6,8 @@ export default function HomePage() {
   // For demo purposes, showing all properties in both sections
   // You can categorize them differently based on your needs
   const seasonalRentals = properties.slice(0, 2);
-  // Show all long-term rentals (everything from index 2 onward)
-  const longTermRentals = properties.slice(2);
+  // Show only properties explicitly marked as long-term (slug contains 'long-term')
+  const longTermRentals = properties.filter((p) => p.slug.includes('long-term'));
 
   return (
     <div className="min-h-screen bg-white">
