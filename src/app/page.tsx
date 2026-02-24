@@ -191,7 +191,7 @@ export default function HomePage() {
               Looking for a more permanent solution? Our long-term rentals offer the stability and comfort
               of home with the luxury of resort-style amenities.
             </p>
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {longTermRentals.map((property) => (
                 <PropertyCard key={property.id} property={property} />
               ))}
