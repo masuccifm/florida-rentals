@@ -14,7 +14,7 @@ export default function HomePage() {
       {/* Hero Section with Golf Course Background */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 pb-8 pt-32 text-white">
         {/* Background Watermark */}
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-30">
           <Image
             src="/images/Golf-Course.jpg"
             alt="Heritage Landing Golf Course"
@@ -140,7 +140,7 @@ export default function HomePage() {
       {/* Main Portfolio Section */}
       <section className="relative py-20">
         {/* Subtle Background Watermark */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div className="absolute inset-0 opacity-25 pointer-events-none">
           <Image
             src="https://assets.floridarentals.com/assets/properties/24404/tn5_74933729817386314800.jpg"
             alt="Background"
