@@ -11,7 +11,6 @@ export interface Property {
   };
   /** Full street address, optional */
   address?: string;
-  address?: string;
   images: string[];
   monthlyPrice: number;
   features: {
