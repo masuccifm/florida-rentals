@@ -57,6 +57,7 @@ export const properties: Property[] = [
     name: 'Wellen Park Golf & Country Club Condo',
     description: 'Stunning furnished 2BR+Den condo with golf transfer, guard-gated community, and golf fairway views.',
     longDescription: `This luxury end-unit Arabella II floorplan condo at Wellen Park features vaulted ceilings and an abundance of natural light. High-end finishes include quartz countertops and diagonal tile flooring throughout. The master suite boasts an oversized shower and dual walk-in closets. Enjoy two screened lanais overlooking the golf fairway in this guard-gated community. Wellen Park offers resort-style amenities including pool, fitness center, spa/sauna, tennis, pickleball, and bocce courts, plus golf transfer available for residents.`,
+    address: '12580 Galapagos Ct Unit 208, Venice, FL 34293',
     location: {
       city: 'Venice',
       state: 'Florida',
