@@ -35,6 +35,11 @@ export default function PropertyCard({ property }: PropertyCardProps) {
         <p className="mb-3 text-sm text-gray-500">
           {property.location.city}, {property.location.state}
         </p>
+        {property.address && (
+          <p className="mb-3 text-sm text-gray-500">
+            {property.address}
+          </p>
+        )}
         <p className="mb-4 line-clamp-2 text-sm text-gray-600">
           {property.description}
         </p>
