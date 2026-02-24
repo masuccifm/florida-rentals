@@ -13,7 +13,7 @@ export default function PropertyCard({ property }: PropertyCardProps) {
       href={`/properties/${property.slug}`}
       className="group block overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all hover:shadow-lg"
     >
-      <div className="relative aspect-[2/3] w-full overflow-hidden bg-gray-100">
+      <div className="relative aspect-[4/5] w-full overflow-hidden bg-gray-100">
         <Image
           src={property.images[0]}
           alt={property.name}
