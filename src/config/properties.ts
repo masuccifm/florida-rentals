@@ -210,8 +210,10 @@ export const properties: Property[] = [
       area: 'Heritage Landing Golf & Country Club',
     },
     images: [
-      'https://assets.floridarentals.com/placeholder-longterm-1.jpg',
-      'https://assets.floridarentals.com/placeholder-longterm-2.jpg'
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1505692794400-8d6a1b538b0b?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1505692794400-1a2b3c4d5e6f?auto=format&fit=crop&w=1200&q=80'
     ],
     monthlyPrice: 2200,
     features: {
