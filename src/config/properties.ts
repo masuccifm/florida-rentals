@@ -214,6 +214,7 @@ export const properties: Property[] = [
     images: [
       '/images/Long-Term-Conceptual.jpg'
     ],
+    imageContain: true,
     monthlyPrice: 2200,
     features: {
       bedrooms: 2,
@@ -251,6 +252,7 @@ export const properties: Property[] = [
     images: [
       '/images/Long-Term-Conceptual.jpg'
     ],
+    imageContain: true,
     monthlyPrice: 2100,
     features: {
       bedrooms: 2,

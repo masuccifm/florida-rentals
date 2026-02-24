@@ -22,4 +22,6 @@ export interface Property {
   amenities: string[];
   rules: string[];
   featured?: boolean;
+  /** Use object-contain instead of object-cover for the primary image */
+  imageContain?: boolean;
 }

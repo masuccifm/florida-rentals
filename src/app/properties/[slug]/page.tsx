@@ -49,12 +49,15 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-4 md:grid-cols-2">
             {/* Main Image */}
-            <div className="relative aspect-[4/3] overflow-hidden rounded-lg md:col-span-2">
+            <div
+              className="relative overflow-hidden rounded-lg md:col-span-2"
+              style={{ aspectRatio: property.imageContain ? '1/2' : '4/3' }}
+            >
               <Image
                 src={property.images[0]}
                 alt={property.name}
                 fill
-                className="object-cover"
+                className={property.imageContain ? 'object-contain' : 'object-cover'}
                 priority
                 sizes="(max-width: 1280px) 100vw, 1280px"
               />
@@ -66,7 +69,7 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
                   src={image}
                   alt={`${property.name} - Image ${index + 2}`}
                   fill
-                  className="object-cover"
+                  className={property.imageContain ? 'object-contain' : 'object-cover'}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
