@@ -78,6 +78,22 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
         </div>
       </div>
 
+      {/* Video Section */}
+      {property.video && (
+        <div className="bg-white pb-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">Property Video Tour</h2>
+            <video
+              controls
+              className="w-full rounded-lg shadow-md"
+              preload="metadata"
+            >
+              <source src={property.video} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      )}
+
       {/* Content Grid */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-3">

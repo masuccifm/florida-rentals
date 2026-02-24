@@ -24,4 +24,6 @@ export interface Property {
   featured?: boolean;
   /** Use object-contain instead of object-cover for the primary image */
   imageContain?: boolean;
+  /** Optional video path shown on the detail page */
+  video?: string;
 }
