@@ -9,6 +9,9 @@ export interface Property {
     state: string;
     area: string;
   };
+  /** Full street address, optional */
+  address?: string;
+  address?: string;
   images: string[];
   monthlyPrice: number;
   features: {
