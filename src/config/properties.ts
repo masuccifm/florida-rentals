@@ -212,6 +212,7 @@ export const properties: Property[] = [
       state: 'Florida',
       area: 'Heritage Landing Golf & Country Club',
     },
+    detailHeroImage: '/images/conceptual-image.png',
     images: [
       '/images/Main-image-unfurnished-wellenpark.jpg',
       '/images/livingarea-unfurnished-wellenpark.jpg',
@@ -266,6 +267,7 @@ export const properties: Property[] = [
       state: 'Florida',
       area: 'Wellen Park Golf & Country Club',
     },
+    detailHeroImage: '/images/conceptual-image.png',
     images: [
       '/images/Main-image-unfurnished-wellenpark.jpg',
       '/images/livingarea-unfurnished-wellenpark.jpg',

@@ -22,8 +22,8 @@ export interface Property {
   amenities: string[];
   rules: string[];
   featured?: boolean;
-  /** Use object-contain instead of object-cover for the primary image */
-  imageContain?: boolean;
+  /** Optional hero image shown first on the detail page (overrides images[0] for detail only) */
+  detailHeroImage?: string;
   /** Optional video path shown on the detail page */
   video?: string;
 }

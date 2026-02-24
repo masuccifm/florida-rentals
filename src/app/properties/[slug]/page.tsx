@@ -47,34 +47,67 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
       {/* Image Gallery */}
       <div className="bg-white pb-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid gap-4 md:grid-cols-2">
-            {/* Main Image */}
-            <div
-              className="relative overflow-hidden rounded-lg md:col-span-2"
-              style={{ aspectRatio: property.imageContain ? '1/2' : '4/3' }}
-            >
-              <Image
-                src={property.images[0]}
-                alt={property.name}
-                fill
-                className={property.imageContain ? 'object-contain' : 'object-cover'}
-                priority
-                sizes="(max-width: 1280px) 100vw, 1280px"
-              />
+          {property.detailHeroImage ? (
+            <div className="flex flex-col gap-4">
+              {/* Additional Images */}
+              <div className="grid gap-4 md:grid-cols-2">
+                {property.images.slice(0, 4).map((image, index) => (
+                  <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                    <Image
+                      src={image}
+                      alt={`${property.name} - Image ${index + 2}`}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                ))}
+              </div>
+              {/* Floor Plan */}
+              <div className="py-2 flex flex-col items-center gap-0">
+                <h2 className="mb-0 text-2xl font-bold text-gray-900">Conceptual Furnished Unit</h2>
+                <div
+                  className="relative w-full max-w-[590px] overflow-hidden rounded-xl"
+                  style={{ aspectRatio: '1/2' }}
+                >
+                  <Image
+                    src={property.detailHeroImage}
+                    alt={property.name}
+                    fill
+                    className="object-contain object-bottom"
+                    sizes="590px"
+                  />
+                </div>
+
+              </div>
             </div>
-            {/* Additional Images */}
-            {property.images.slice(1, 5).map((image, index) => (
-              <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+          ) : (
+            <div className="grid gap-4 md:grid-cols-2">
+              {/* Main Image */}
+              <div className="relative overflow-hidden rounded-lg md:col-span-2" style={{ aspectRatio: '4/3' }}>
                 <Image
-                  src={image}
-                  alt={`${property.name} - Image ${index + 2}`}
+                  src={property.images[0]}
+                  alt={property.name}
                   fill
-                  className={property.imageContain ? 'object-contain' : 'object-cover'}
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 1280px) 100vw, 1280px"
                 />
               </div>
-            ))}
-          </div>
+              {/* Additional Images */}
+              {property.images.slice(0, 4).map((image, index) => (
+                <div key={index} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                  <Image
+                    src={image}
+                    alt={`${property.name} - Image ${index + 2}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 

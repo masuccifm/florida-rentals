@@ -41,8 +41,8 @@ export async function sendBookingNotificationEmail(data: BookingEmailData) {
     }
 
     await resend.emails.send({
-      from: 'Florida Rentals <bookings@floridarentals.com>',
-      to: process.env.BOOKING_NOTIFICATION_EMAIL || 'Leslie.Masucci@gmail.com',
+      from: 'Florida Rentals <onboarding@resend.dev>',
+      to: ['leslie.masucci@gmail.com', 'masuccifm@gmail.com', 'jeffmas64@gmail.com'],
       subject: `New Booking Request - ${propertyName}`,
       html: `
         <!DOCTYPE html>
