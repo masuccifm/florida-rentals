@@ -198,6 +198,43 @@ export const properties: Property[] = [
     ],
     featured: false,
   },
+  {
+    id: 'heritage-landing-unit-1016',
+    slug: 'heritage-landing-long-term-1016',
+    name: 'Heritage Landing Unit 1016 (Long-Term)',
+    description: 'Long-term furnished 2BR condo at Heritage Landing. Ideal for monthly rentals.',
+    longDescription: `14234 Heritage Landing Blvd Unit 1016, Punta Gorda, FL 33955-6337. Comfortable long-term unit with full kitchen, in-unit laundry, and access to community amenities. Flexible lease terms available.`,
+    location: {
+      city: 'Punta Gorda',
+      state: 'Florida',
+      area: 'Heritage Landing Golf & Country Club',
+    },
+    images: [
+      'https://assets.floridarentals.com/placeholder-longterm-1.jpg',
+      'https://assets.floridarentals.com/placeholder-longterm-2.jpg'
+    ],
+    monthlyPrice: 2200,
+    features: {
+      bedrooms: 2,
+      bathrooms: 2,
+      maxGuests: 4,
+      squareFeet: 1200,
+    },
+    amenities: [
+      'Full Kitchen',
+      'In-unit Washer & Dryer',
+      'High-Speed WiFi',
+      'Access to Fitness Center',
+      'Community Pool',
+      'Screened Lanai'
+    ],
+    rules: [
+      'Long-term lease preferred (30+ nights)',
+      'Utilities may be tenant responsibility',
+      'No smoking'
+    ],
+    featured: false,
+  },
 ];
 
 // Helper functions
