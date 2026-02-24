@@ -7,6 +7,7 @@ export const properties: Property[] = [
     name: 'Heritage Landing Golf & Country Club Condo',
     description: 'Stunning furnished 2BR+Den condo with golf transfer, resort-style amenities, and lake views.',
     longDescription: `This luxury end-unit condo at Heritage Landing features vaulted ceilings, high-end finishes with quartz countertops, and diagonal tile flooring. The master suite includes an oversized shower, double sinks, and two walk-in closets. Enjoy two screened lanais with lake views and a 2-car garage. The highly sought-after Arabella II floorplan offers the perfect blend of luxury and comfort. Community features include resort-style pool with poolside cafe, state-of-the-art fitness center, full-service spa, tennis and pickleball courts, and championship golf.`,
+    address: '14234 Heritage Landing Blvd Unit 1026, Punta Gorda, FL 33955-6337',
     location: {
       city: 'Punta Gorda',
       state: 'Florida',
