@@ -122,7 +122,7 @@ export default function HomePage() {
             <div className="group relative h-32 w-32 sm:h-40 sm:w-40 shadow-xl cursor-pointer transition-all hover:shadow-2xl hover:z-50 hover:-translate-y-2 duration-300 hidden xl:block rotate-2 hover:rotate-0">
               <div className="relative h-full w-full overflow-hidden rounded-3xl ring-4 ring-white/20">
                 <Image
-                  src="/images/Aminites.avif"
+                  src="/images/Aminites.jpeg"
                   alt="Amenities"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
